@@ -35,8 +35,8 @@ body {
 
 /* Navbar */
 #navbar {
-  /* position: fixed;
-  width: 100%; */
+  /* position: fixed; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,10 +68,37 @@ body {
   margin: 0 20px;
   cursor: pointer;
   color: var(--color-black);
+  font-weight: var(--weight-bold);
   padding: 5px;
   transition: all var(--animtaion-duration) linear;
 }
 
 .navbar__menu__item:hover {
   color: var(--color-light-gray);
+}
+
+/* Home */
+#home {
+  background: url("images/home_background.jpg") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 380px;
+  text-align: center;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+
+.home__title {
+  font-size: 45px;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
 }
