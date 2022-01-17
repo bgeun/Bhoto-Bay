@@ -1,0 +1,77 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-dark-white: #bdbdbd;
+  --color-blue: #73aace;
+  --color-sky-blue: #a8d8ea;
+  --color-black: #000000;
+  --color-light-gray: #7c7979;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600px;
+  --weight-regular: 400;
+
+  /* Annimation */
+  --animtaion-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navbar */
+#navbar {
+  /* position: fixed;
+  width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  background-color: transparent;
+}
+
+.navbar__logo__img {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+  transition: all var(--animtaion-duration) ease;
+}
+
+.navbar__logo__img:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  font-size: var(--font-regular);
+}
+
+.navbar__menu__item {
+  height: 42px;
+  margin: 0 20px;
+  cursor: pointer;
+  color: var(--color-black);
+  padding: 5px;
+  transition: all var(--animtaion-duration) linear;
+}
+
+.navbar__menu__item:hover {
+  color: var(--color-light-gray);
+}
