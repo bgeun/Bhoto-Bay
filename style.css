@@ -80,9 +80,14 @@ body {
 /* Home */
 #home {
   background: url("images/home_background.jpg") center/cover no-repeat;
+  height: 80vh;
   padding: 40px;
   padding-top: 380px;
   text-align: center;
+}
+
+.home__title__contact {
+  margin-top: 400px;
 }
 
 .home__title,
@@ -96,9 +101,52 @@ body {
   font-size: 45px;
 }
 
+.home__contact {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: 10px;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  transition: all var(--animtaion-duration) ease-in;
+}
+
+.home__contact:hover {
+  transform: scale(1.1);
+}
+
 /* Section common */
 .section {
   padding: 50px;
   text-align: center;
   margin: auto;
+}
+
+/* Pictures */
+
+#pictures {
+  margin: 30px 0 50px 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.pic__container {
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  margin: 10px;
+}
+
+.pic {
+  /* background-color: #7c7979; */
+  margin: auto;
+}
+
+.pic img {
+  width: auto;
+  height: auto;
+  max-width: 390px;
+  max-height: 390px;
 }
